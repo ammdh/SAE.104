@@ -1,0 +1,60 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+        <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
+        <p>
+            Bonjour, je suis Arsene M'DAHOMA, j'ai 18 ans, j'habite à Roanne<br>
+            je suis originaires de Mayotte et de la Reunion, et j'étudie à l'I.U.T de Roanne,<br>
+            où je suis en apprentissage dans la formation B.U.T réseaux et télécommunication en première année.
+        </p>
+        <h2>Parcours</h3>
+        <p>
+            
+            Je suis née en France à Angouleme en CHARENTE(16), mes parents sont originaires de la Réunion et de Mayotte, 
+            <div class="col-md-6">
+                <img src="{{ asset('mayotte.png') }}" alt="Mayotte Image" class="img-fluid resized-image">
+                <img src="{{ asset('reunion.png') }}" alt="Reunion Image" class="img-fluid resized-image">
+            </div>
+        </p>
+        </div>
+        <div class="col-md-6">
+                <img src="{{ asset('moi.png') }}" alt="Ma Photo" class="img-fluid">
+        </div>
+    </div>
+
+        <h3>Cliquer ici...</h3>
+        <a href="{{ path('plus') }}" class="btn btn-primary">Pour en savoir plus</a>
+    </div>
+    <style>
+        .resized-image {
+            max-width: 50%; /* Définit la largeur maximale de l'image à 100% de la largeur du conteneur parent */
+            height: auto; /* Garantit que l'image conserve ses proportions d'origine */
+        }
+    </style>
+{% endblock %}

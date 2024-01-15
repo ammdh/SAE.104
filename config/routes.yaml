@@ -3,3 +3,10 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+arsene_ars1:
+    path: /ars1
+    controller: App\Controller\ArseneController::ac
+arsene_ars2:
+    path: /ars2
+    controller: App\Controller\ArseneController::ab
