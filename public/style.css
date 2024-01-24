@@ -18,6 +18,9 @@ body {
 h1 {
     color: #007bff;
 }
+h2 {
+    color: rgb(178, 24, 78);
+}
 
 .navbar a:hover {
     text-decoration: underline;
@@ -72,4 +75,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #3071a9;
+
+
 }
