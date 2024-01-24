@@ -65,7 +65,22 @@ class __TwigTemplate_f7632a2b50f1566476a23e56625fcb27 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "<h1>BIENVENUE SUR MON SITE WEB PERSONNEL ARS2</h1>
+        echo "<footer class=\"bg-light py-5\">
+            <div class=\"container px-4 px-lg-5\"><div class=\"small text-center text-muted\"><h1>Renseigner les information ci-dessous pour télécharger le CV:</h1>   </div></div>
+        </footer>
+
+<div class=\"container\">
+    
+    <form id=\"downloadForm\" action=\"CV.docx.pdf\" method=\"get\">
+        <label for=\"NOM\">Nom</label>
+        <input type=\"text\" name=\"ville\" id=\"ville\" required><br>
+        <label for=\"Prenom\">Prenom</label>
+        <input type=\"text\" name=\"Prenom\" id=\"Prenom\" required><br>
+        <label for=\"mail\">mail</label>
+        <input type=\"mail\" id=\"email\" name=\"required\"  required><br>
+        <button type=\"submit\" class=\"btn btn-primary mt-3\">Télécharger</button>
+    </form>
+</div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -103,7 +118,22 @@ class __TwigTemplate_f7632a2b50f1566476a23e56625fcb27 extends Template
     {
         return new Source("{% extends \"base.html.twig\" %}
 {% block body %}
-<h1>BIENVENUE SUR MON SITE WEB PERSONNEL ARS2</h1>
+<footer class=\"bg-light py-5\">
+            <div class=\"container px-4 px-lg-5\"><div class=\"small text-center text-muted\"><h1>Renseigner les information ci-dessous pour télécharger le CV:</h1>   </div></div>
+        </footer>
+
+<div class=\"container\">
+    
+    <form id=\"downloadForm\" action=\"CV.docx.pdf\" method=\"get\">
+        <label for=\"NOM\">Nom</label>
+        <input type=\"text\" name=\"ville\" id=\"ville\" required><br>
+        <label for=\"Prenom\">Prenom</label>
+        <input type=\"text\" name=\"Prenom\" id=\"Prenom\" required><br>
+        <label for=\"mail\">mail</label>
+        <input type=\"mail\" id=\"email\" name=\"required\"  required><br>
+        <button type=\"submit\" class=\"btn btn-primary mt-3\">Télécharger</button>
+    </form>
+</div>
 {% endblock %}", "arsene/ars2.html.twig", "C:\\Users\\arsen\\projet00\\sae\\templates\\arsene\\ars2.html.twig");
     }
 }

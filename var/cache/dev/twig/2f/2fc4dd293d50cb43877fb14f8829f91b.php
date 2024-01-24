@@ -25,7 +25,6 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
-            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -56,48 +55,6 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
     }
 
     // line 3
-    public function block_stylesheets($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 4
-        echo "    ";
-        $this->displayParentBlock("stylesheets", $context, $blocks);
-        echo "
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-
-        h1 {
-            color: #007bff;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        .container {
-            margin-top: 20px;
-        }
-    </style>
-";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 26
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -107,7 +64,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 27
+        // line 4
         echo "    <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-md-6\">
@@ -123,27 +80,24 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
             Je suis née en France à Angouleme en CHARENTE(16), mes parents sont originaires de la Réunion et de Mayotte, 
             <div class=\"col-md-6\">
                 <img src=\"";
-        // line 41
+        // line 18
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("mayotte.png"), "html", null, true);
         echo "\" alt=\"Mayotte Image\" class=\"img-fluid resized-image\">
                 <img src=\"";
-        // line 42
+        // line 19
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("reunion.png"), "html", null, true);
         echo "\" alt=\"Reunion Image\" class=\"img-fluid resized-image\">
             </div>
         </p>
         </div>
         <div class=\"col-md-6\">
-                <img src=\"";
-        // line 47
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("moi.png"), "html", null, true);
-        echo "\" alt=\"Ma Photo\" class=\"img-fluid\">
+              
         </div>
     </div>
 
         <h3>Cliquer ici...</h3>
         <a href=\"";
-        // line 52
+        // line 29
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("plus");
         echo "\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
@@ -183,35 +137,12 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  147 => 52,  139 => 47,  131 => 42,  127 => 41,  111 => 27,  101 => 26,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  101 => 29,  88 => 19,  84 => 18,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends \"base.html.twig\" %}
-
-{% block stylesheets %}
-    {{ parent() }}
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-
-        h1 {
-            color: #007bff;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        .container {
-            margin-top: 20px;
-        }
-    </style>
-{% endblock %}
 
 {% block body %}
     <div class=\"container\">
@@ -234,7 +165,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         </p>
         </div>
         <div class=\"col-md-6\">
-                <img src=\"{{ asset('moi.png') }}\" alt=\"Ma Photo\" class=\"img-fluid\">
+              
         </div>
     </div>
 
