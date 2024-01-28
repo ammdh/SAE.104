@@ -114,7 +114,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id=\"downloadForm\" action=\"portfolios.xlsx\" method=\"get\">
-        <button type=\"submit\" class=\"btn btn-primary mt-3\">Télécharger</button>
+        <button type=\"submit\" class=\"btn btn-primary mt-3\">Obtenir Portfolios(format excel)</button>
     </form>
 
 
@@ -244,7 +244,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id=\"downloadForm\" action=\"portfolios.xlsx\" method=\"get\">
-        <button type=\"submit\" class=\"btn btn-primary mt-3\">Télécharger</button>
+        <button type=\"submit\" class=\"btn btn-primary mt-3\">Obtenir Portfolios(format excel)</button>
     </form>
 
 

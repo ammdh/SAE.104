@@ -66,7 +66,6 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
         // line 4
         echo "    <div class=\"container\">
-        <div class=\"row\">
             <div class=\"col-md-6\">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
@@ -80,11 +79,11 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
             Je suis née en France à Angouleme en CHARENTE(16), mes parents sont originaires de la Réunion et de Mayotte, 
             <div class=\"col-md-6\">
                 <img src=\"";
-        // line 18
+        // line 17
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("mayotte.png"), "html", null, true);
         echo "\" alt=\"Mayotte Image\" class=\"img-fluid resized-image\">
                 <img src=\"";
-        // line 19
+        // line 18
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("reunion.png"), "html", null, true);
         echo "\" alt=\"Reunion Image\" class=\"img-fluid resized-image\">
             </div>
@@ -97,7 +96,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
         <h3>Cliquer ici...</h3>
         <a href=\"";
-        // line 29
+        // line 28
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("plus");
         echo "\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
@@ -137,7 +136,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  101 => 29,  88 => 19,  84 => 18,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  100 => 28,  87 => 18,  83 => 17,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -146,7 +145,6 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
 {% block body %}
     <div class=\"container\">
-        <div class=\"row\">
             <div class=\"col-md-6\">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
