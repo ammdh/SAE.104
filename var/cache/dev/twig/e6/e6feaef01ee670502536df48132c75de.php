@@ -89,26 +89,28 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     <div class=\"progress-container\">
         <h1>Voici mon portfolios:</h1>   
-        <div class=\"progress-header\">RT1</div>
-        <div class=\"progress-bar bar-1\">Administrer les réseaux et l’Internet (";
+        <div class=\"progress-header\">Creer des outils et application informatiques  pour les R&T</div>
+        <div class=\"progress-bar bar-1\">Connaître l’architecture et les technologies d’un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive) (";
         // line 11
-        echo 55;
+        echo 70;
+        echo "%)</div>
+    </div>
+    
+
+    <div class=\"progress-container\">
+        <div class=\"progress-header\">Administrer les réseaux et l’Internet</div>
+        <div class=\"progress-bar bar-2\">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et
+                    administration des réseaux et services fournis (DHCP, DNS, ...) (";
+        // line 18
+        echo 80;
         echo "%)</div>
     </div>
 
     <div class=\"progress-container\">
-        <div class=\"progress-header\">RT2</div>
-        <div class=\"progress-bar bar-2\">Connecter les entreprises et les usagers (";
-        // line 16
-        echo 40;
-        echo "%)</div>
-    </div>
-
-    <div class=\"progress-container\">
-        <div class=\"progress-header\">RT3</div>
-        <div class=\"progress-bar bar-3\">Créer des outils et applications informatiques pour les R&T (";
-        // line 21
-        echo 67;
+        <div class=\"progress-header\">Connecter les entreprises et les usagers </div>
+        <div class=\"progress-bar bar-3\">Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement (";
+        // line 23
+        echo 20;
         echo "%)</div>
     </div>
     <div class=\"container\">
@@ -160,24 +162,24 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-1 {
         width: ";
-        // line 71
-        echo 55;
+        // line 73
+        echo 70;
         echo "%;
         background-color: #4CAF50;
     }
 
     .bar-2 {
         width: ";
-        // line 76
-        echo 40;
+        // line 78
+        echo 80;
         echo "%;
         background-color: #2196F3;
     }
 
     .bar-3 {
         width: ";
-        // line 81
-        echo 67;
+        // line 83
+        echo 20;
         echo "%;
         background-color: #f44336;
     }
@@ -214,7 +216,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  180 => 81,  172 => 76,  164 => 71,  111 => 21,  103 => 16,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  182 => 83,  174 => 78,  166 => 73,  113 => 23,  105 => 18,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -228,18 +230,20 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     <div class=\"progress-container\">
         <h1>Voici mon portfolios:</h1>   
-        <div class=\"progress-header\">RT1</div>
-        <div class=\"progress-bar bar-1\">Administrer les réseaux et l’Internet ({{ 55 }}%)</div>
+        <div class=\"progress-header\">Creer des outils et application informatiques  pour les R&T</div>
+        <div class=\"progress-bar bar-1\">Connaître l’architecture et les technologies d’un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive) ({{ 70 }}%)</div>
+    </div>
+    
+
+    <div class=\"progress-container\">
+        <div class=\"progress-header\">Administrer les réseaux et l’Internet</div>
+        <div class=\"progress-bar bar-2\">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et
+                    administration des réseaux et services fournis (DHCP, DNS, ...) ({{ 80 }}%)</div>
     </div>
 
     <div class=\"progress-container\">
-        <div class=\"progress-header\">RT2</div>
-        <div class=\"progress-bar bar-2\">Connecter les entreprises et les usagers ({{ 40 }}%)</div>
-    </div>
-
-    <div class=\"progress-container\">
-        <div class=\"progress-header\">RT3</div>
-        <div class=\"progress-bar bar-3\">Créer des outils et applications informatiques pour les R&T ({{ 67 }}%)</div>
+        <div class=\"progress-header\">Connecter les entreprises et les usagers </div>
+        <div class=\"progress-bar bar-3\">Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement ({{ 20 }}%)</div>
     </div>
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
@@ -289,17 +293,17 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
     }
 
     .bar-1 {
-        width: {{ 55 }}%;
+        width: {{ 70 }}%;
         background-color: #4CAF50;
     }
 
     .bar-2 {
-        width: {{ 40 }}%;
+        width: {{ 80 }}%;
         background-color: #2196F3;
     }
 
     .bar-3 {
-        width: {{ 67 }}%;
+        width: {{ 20 }}%;
         background-color: #f44336;
     }
 </style>
