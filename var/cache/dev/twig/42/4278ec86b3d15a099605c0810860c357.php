@@ -75,7 +75,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
 \t\t\t\t\t\t
 \t\t\t\t\t\t  <a class=\"nav-link\" href=\"";
         // line 21
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("arsene_ars1");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ars1");
         echo "\">Portfolios - ARSENE</a>
 
                         
@@ -85,23 +85,29 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
                     <li class=\"nav-item\">
                           <a class=\"nav-link\" href=\"";
         // line 28
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("arsene_ars2");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ars2");
         echo "\">CV - ARSENE</a>
+                    </li>
+\t\t\t\t\t<li class=\"nav-item\">
+                          <a class=\"nav-link\" href=\"";
+        // line 31
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ini");
+        echo "\">Modification</a>
                     </li>
                 </ul>
             </div>
 \t\t</nav>
 \t\t<div 2
 \t\t\t";
-        // line 34
+        // line 37
         $this->displayBlock('body', $context, $blocks);
-        // line 35
+        // line 38
         echo "\t\t</div>
 
 \t\t";
-        // line 37
+        // line 40
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 38
+        // line 41
         echo "\t</body>
 </html>
 ";
@@ -150,7 +156,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
 
     }
 
-    // line 34
+    // line 37
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -168,7 +174,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
 
     }
 
-    // line 37
+    // line 40
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -207,7 +213,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  172 => 37,  154 => 34,  136 => 8,  117 => 5,  105 => 38,  103 => 37,  99 => 35,  97 => 34,  88 => 28,  78 => 21,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  178 => 40,  160 => 37,  142 => 8,  123 => 5,  111 => 41,  109 => 40,  105 => 38,  103 => 37,  94 => 31,  88 => 28,  78 => 21,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -232,14 +238,17 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
                 <ul class=\"navbar-nav me-auto\">
                     <li class=\"nav-item\">
 \t\t\t\t\t\t
-\t\t\t\t\t\t  <a class=\"nav-link\" href=\"{{ path('arsene_ars1') }}\">Portfolios - ARSENE</a>
+\t\t\t\t\t\t  <a class=\"nav-link\" href=\"{{ path('ars1') }}\">Portfolios - ARSENE</a>
 
                         
                             <span class=\"visually-hidden\">(current)</span>
                         </a>
                     </li>
                     <li class=\"nav-item\">
-                          <a class=\"nav-link\" href=\"{{ path('arsene_ars2') }}\">CV - ARSENE</a>
+                          <a class=\"nav-link\" href=\"{{ path('ars2') }}\">CV - ARSENE</a>
+                    </li>
+\t\t\t\t\t<li class=\"nav-item\">
+                          <a class=\"nav-link\" href=\"{{ path('ini') }}\">Modification</a>
                     </li>
                 </ul>
             </div>

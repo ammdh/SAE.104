@@ -113,6 +113,15 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
         echo 20;
         echo "%)</div>
     </div>
+
+    <div class=\"progress-container\">
+        <div class=\"progress-header\">Administrer les réseaux et l’Internet </div>
+        <div class=\"progress-bar bar-4\">Savoir identifier les dysfonctionnements du réseau local(";
+        // line 28
+        echo 55;
+        echo "%)</div>
+    </div>
+
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id=\"downloadForm\" action=\"portfolios.xlsx\" method=\"get\">
@@ -162,7 +171,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-1 {
         width: ";
-        // line 73
+        // line 79
         echo 70;
         echo "%;
         background-color: #4CAF50;
@@ -170,7 +179,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-2 {
         width: ";
-        // line 78
+        // line 84
         echo 80;
         echo "%;
         background-color: #2196F3;
@@ -178,10 +187,17 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-3 {
         width: ";
-        // line 83
+        // line 89
         echo 20;
         echo "%;
         background-color: #f44336;
+    }
+    .bar-4 {
+        width: ";
+        // line 93
+        echo 55;
+        echo "%;
+        background-color: #e44336;
     }
 </style>
 
@@ -216,7 +232,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  182 => 83,  174 => 78,  166 => 73,  113 => 23,  105 => 18,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  198 => 93,  191 => 89,  183 => 84,  175 => 79,  121 => 28,  113 => 23,  105 => 18,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -245,6 +261,12 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
         <div class=\"progress-header\">Connecter les entreprises et les usagers </div>
         <div class=\"progress-bar bar-3\">Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement ({{ 20 }}%)</div>
     </div>
+
+    <div class=\"progress-container\">
+        <div class=\"progress-header\">Administrer les réseaux et l’Internet </div>
+        <div class=\"progress-bar bar-4\">Savoir identifier les dysfonctionnements du réseau local({{ 55 }}%)</div>
+    </div>
+
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id=\"downloadForm\" action=\"portfolios.xlsx\" method=\"get\">
@@ -305,6 +327,10 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
     .bar-3 {
         width: {{ 20 }}%;
         background-color: #f44336;
+    }
+    .bar-4 {
+        width: {{ 55 }}%;
+        background-color: #e44336;
     }
 </style>
 

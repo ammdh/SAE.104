@@ -32,14 +32,19 @@ class ArseneController extends AbstractController
         return $this->render('arsene/plus.html.twig');
     }
     #[Route('/ars1', name: 'ars1')]
-    public function ac(): Response
+    public function ars1(): Response
     {
         return $this->render('arsene/ars1.html.twig');
     }
     #[Route('/ars2', name: 'ars2')]
-    public function ab(): Response
+    public function ars2(): Response
     {
         return $this->render('arsene/ars2.html.twig');
+    }
+    #[Route('/ini', name: 'ini')]
+    public function ini(): Response
+    {
+        return $this->render('arsene/ini.html.twig');     
     }
 
    

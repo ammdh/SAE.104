@@ -16,14 +16,9 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'arsene', '_controller' => 'App\\Controller\\ArseneController::home'], null, null, null, false, false, null]],
         '/plus' => [[['_route' => 'plus', '_controller' => 'App\\Controller\\ArseneController::about'], null, null, null, false, false, null]],
-        '/ars1' => [
-            [['_route' => 'ars1', '_controller' => 'App\\Controller\\ArseneController::ac'], null, null, null, false, false, null],
-            [['_route' => 'arsene_ars1', '_controller' => 'App\\Controller\\ArseneController::ac'], null, null, null, false, false, null],
-        ],
-        '/ars2' => [
-            [['_route' => 'ars2', '_controller' => 'App\\Controller\\ArseneController::ab'], null, null, null, false, false, null],
-            [['_route' => 'arsene_ars2', '_controller' => 'App\\Controller\\ArseneController::ab'], null, null, null, false, false, null],
-        ],
+        '/ars1' => [[['_route' => 'ars1', '_controller' => 'App\\Controller\\ArseneController::ars1'], null, null, null, false, false, null]],
+        '/ars2' => [[['_route' => 'ars2', '_controller' => 'App\\Controller\\ArseneController::ars2'], null, null, null, false, false, null]],
+        '/ini' => [[['_route' => 'ini', '_controller' => 'App\\Controller\\ArseneController::ini'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
