@@ -25,6 +25,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -55,6 +56,25 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
     }
 
     // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Accueil";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -64,8 +84,9 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 4
+        // line 6
         echo "    <div class=\"container\">
+        <div class=\"row\">
             <div class=\"col-md-6\">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
@@ -79,11 +100,11 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
             Je suis née en France à Angouleme en CHARENTE(16), mes parents sont originaires de la Réunion et de Mayotte, 
             <div class=\"col-md-6\">
                 <img src=\"";
-        // line 17
+        // line 20
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("mayotte.png"), "html", null, true);
         echo "\" alt=\"Mayotte Image\" class=\"img-fluid resized-image\">
                 <img src=\"";
-        // line 18
+        // line 21
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("reunion.png"), "html", null, true);
         echo "\" alt=\"Reunion Image\" class=\"img-fluid resized-image\">
             </div>
@@ -96,10 +117,11 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
         <h3>Cliquer ici...</h3>
         <a href=\"";
-        // line 28
+        // line 31
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("plus");
         echo "\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
+    
     <style>
         .resized-image {
             max-width: 50%; /* Définit la largeur maximale de l'image à 100% de la largeur du conteneur parent */
@@ -136,15 +158,18 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  100 => 28,  87 => 18,  83 => 17,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  121 => 31,  108 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends \"base.html.twig\" %}
 
+{% block title%}Accueil{% endblock %}
+
 {% block body %}
     <div class=\"container\">
+        <div class=\"row\">
             <div class=\"col-md-6\">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
@@ -170,6 +195,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         <h3>Cliquer ici...</h3>
         <a href=\"{{ path('plus') }}\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
+    
     <style>
         .resized-image {
             max-width: 50%; /* Définit la largeur maximale de l'image à 100% de la largeur du conteneur parent */

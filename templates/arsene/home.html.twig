@@ -1,7 +1,10 @@
 {% extends "base.html.twig" %}
 
+{% block title%}Accueil{% endblock %}
+
 {% block body %}
     <div class="container">
+        <div class="row">
             <div class="col-md-6">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
@@ -27,6 +30,7 @@
         <h3>Cliquer ici...</h3>
         <a href="{{ path('plus') }}" class="btn btn-primary">Pour en savoir plus</a>
     </div>
+    
     <style>
         .resized-image {
             max-width: 50%; /* Définit la largeur maximale de l'image à 100% de la largeur du conteneur parent */

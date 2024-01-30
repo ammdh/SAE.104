@@ -65,7 +65,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Barres de progression";
+        echo "E-portfolio";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -239,7 +239,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Barres de progression{% endblock %}
+{% block title %}E-portfolio{% endblock %}
 
 {% block body %}
 

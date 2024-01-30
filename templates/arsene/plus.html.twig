@@ -4,10 +4,8 @@
 {# titre de la page#}
 {% block title%}mes loisirs{% endblock %}
 
-{# le css de la page#}
-{% block stylesheets %}
-<link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-{% endblock %}
+
+
 {# le contenu html de cette page#}
 {% block body %}
 <div class="sartp">
@@ -19,18 +17,15 @@
   <img src="https://cdn.pixabay.com/photo/2020/04/15/14/45/microphone-5046876_960_720.jpg" alt="photo de music">
 </div>
 
-<div class="imag-container  nation">
-  <img src="https://cdn.pixabay.com/photo/2015/09/05/19/57/swimming-924895_960_720.jpg" alt="photo de nation">
+<div class="imag-container  mma">
+  <img src="https://medias-wordpress-offload.storage.googleapis.com/lesportbusiness.com/2024/01/18184937/baki-doumbe-place-billet-accor-arena-paris-650x394.png" alt="photo de mma">
 </div>
 
-<div class="imag-container mangas-animé">
-  <img src="https://cdn.pixabay.com/photo/2015/09/20/22/09/anime-948925_960_720.jpg" alt="photo de mangas animé">
+<div class="imag-container formule-1">
+  <img src="https://www.turbo.fr/sites/default/files/styles/header_image/public/2020-11/Hamilton.jpg?itok=z1cFSo2i" alt="photo de FORMULE 1">
 </div>
+
 <div class="imag-container">
-  <img src="https://cdn.pixabay.com/photo/2016/05/09/09/51/team-1381084_960_720.jpg" alt="photo de jeux de société">
-</div>
-
-<div class="imag-container jeux-vidéo">
   <img src="https://cdn.pixabay.com/photo/2021/09/07/07/11/joysticks-6603119_960_720.jpg" alt="photo de jeux vidéo">
 </div>
 
@@ -49,7 +44,7 @@
   height: auto;
   
 }
-.music , .mangas-animé , .jeux-vidéo {
+.music , .formule-1 , .jeux-vidéo {
   float: right;
 
 }

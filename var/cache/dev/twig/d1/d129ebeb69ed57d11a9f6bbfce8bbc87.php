@@ -65,7 +65,7 @@ class __TwigTemplate_cc15f9202223581abae3c58ef5bd43f5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Mon CV";
+        echo "Modification";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -85,7 +85,9 @@ class __TwigTemplate_cc15f9202223581abae3c58ef5bd43f5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1> Bonjour <h1>
+        echo "<div class=\"progress-container\">
+    <h1> Bonjour </h1>
+</div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -123,10 +125,12 @@ class __TwigTemplate_cc15f9202223581abae3c58ef5bd43f5 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Mon CV{% endblock %}
+{% block title %}Modification{% endblock %}
 
 {% block body %}
-    <h1> Bonjour <h1>
+<div class=\"progress-container\">
+    <h1> Bonjour </h1>
+</div>
 {% endblock %}", "arsene/ini.html.twig", "C:\\Users\\arsen\\projet00\\sae\\templates\\arsene\\ini.html.twig");
     }
 }

@@ -25,6 +25,7 @@ class __TwigTemplate_f7632a2b50f1566476a23e56625fcb27 extends Template
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -54,7 +55,26 @@ class __TwigTemplate_f7632a2b50f1566476a23e56625fcb27 extends Template
 
     }
 
-    // line 2
+    // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        echo "mMon cv";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -64,7 +84,7 @@ class __TwigTemplate_f7632a2b50f1566476a23e56625fcb27 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 3
+        // line 6
         echo "<footer class=\"bg-light py-5\">
             <div class=\"container px-4 px-lg-5\"><div class=\"small text-center text-muted\"><h1>Renseigner les information ci-dessous pour télécharger le CV:</h1>   </div></div>
         </footer>
@@ -111,12 +131,15 @@ class __TwigTemplate_f7632a2b50f1566476a23e56625fcb27 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  68 => 3,  58 => 2,  35 => 1,);
+        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends \"base.html.twig\" %}
+
+{% block title%}mMon cv{% endblock %}
+
 {% block body %}
 <footer class=\"bg-light py-5\">
             <div class=\"container px-4 px-lg-5\"><div class=\"small text-center text-muted\"><h1>Renseigner les information ci-dessous pour télécharger le CV:</h1>   </div></div>

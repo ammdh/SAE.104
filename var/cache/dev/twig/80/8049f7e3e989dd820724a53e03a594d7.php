@@ -26,7 +26,6 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -75,30 +74,7 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
 
     }
 
-    // line 8
-    public function block_stylesheets($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 9
-        echo "<link rel=\"stylesheet\" href=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/styles.css"), "html", null, true);
-        echo "\">
-";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 12
+    // line 10
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -108,7 +84,7 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 13
+        // line 11
         echo "<div class=\"sartp\">
  <div class=\"imag-container\">
   <img src=\"https://cdn.pixabay.com/photo/2016/11/14/05/21/children-1822688_960_720.jpg\" alt=\"photo de football\">
@@ -118,18 +94,15 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
   <img src=\"https://cdn.pixabay.com/photo/2020/04/15/14/45/microphone-5046876_960_720.jpg\" alt=\"photo de music\">
 </div>
 
-<div class=\"imag-container  nation\">
-  <img src=\"https://cdn.pixabay.com/photo/2015/09/05/19/57/swimming-924895_960_720.jpg\" alt=\"photo de nation\">
+<div class=\"imag-container  mma\">
+  <img src=\"https://medias-wordpress-offload.storage.googleapis.com/lesportbusiness.com/2024/01/18184937/baki-doumbe-place-billet-accor-arena-paris-650x394.png\" alt=\"photo de mma\">
 </div>
 
-<div class=\"imag-container mangas-animé\">
-  <img src=\"https://cdn.pixabay.com/photo/2015/09/20/22/09/anime-948925_960_720.jpg\" alt=\"photo de mangas animé\">
+<div class=\"imag-container formule-1\">
+  <img src=\"https://www.turbo.fr/sites/default/files/styles/header_image/public/2020-11/Hamilton.jpg?itok=z1cFSo2i\" alt=\"photo de FORMULE 1\">
 </div>
+
 <div class=\"imag-container\">
-  <img src=\"https://cdn.pixabay.com/photo/2016/05/09/09/51/team-1381084_960_720.jpg\" alt=\"photo de jeux de société\">
-</div>
-
-<div class=\"imag-container jeux-vidéo\">
   <img src=\"https://cdn.pixabay.com/photo/2021/09/07/07/11/joysticks-6603119_960_720.jpg\" alt=\"photo de jeux vidéo\">
 </div>
 
@@ -148,7 +121,7 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
   height: auto;
   
 }
-.music , .mangas-animé , .jeux-vidéo {
+.music , .formule-1 , .jeux-vidéo {
   float: right;
 
 }
@@ -184,7 +157,7 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
      */
     public function getDebugInfo()
     {
-        return array (  112 => 13,  102 => 12,  89 => 9,  79 => 8,  60 => 5,  37 => 2,);
+        return array (  88 => 11,  78 => 10,  59 => 5,  36 => 2,);
     }
 
     public function getSourceContext()
@@ -195,10 +168,8 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
 {# titre de la page#}
 {% block title%}mes loisirs{% endblock %}
 
-{# le css de la page#}
-{% block stylesheets %}
-<link rel=\"stylesheet\" href=\"{{ asset('css/styles.css') }}\">
-{% endblock %}
+
+
 {# le contenu html de cette page#}
 {% block body %}
 <div class=\"sartp\">
@@ -210,18 +181,15 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
   <img src=\"https://cdn.pixabay.com/photo/2020/04/15/14/45/microphone-5046876_960_720.jpg\" alt=\"photo de music\">
 </div>
 
-<div class=\"imag-container  nation\">
-  <img src=\"https://cdn.pixabay.com/photo/2015/09/05/19/57/swimming-924895_960_720.jpg\" alt=\"photo de nation\">
+<div class=\"imag-container  mma\">
+  <img src=\"https://medias-wordpress-offload.storage.googleapis.com/lesportbusiness.com/2024/01/18184937/baki-doumbe-place-billet-accor-arena-paris-650x394.png\" alt=\"photo de mma\">
 </div>
 
-<div class=\"imag-container mangas-animé\">
-  <img src=\"https://cdn.pixabay.com/photo/2015/09/20/22/09/anime-948925_960_720.jpg\" alt=\"photo de mangas animé\">
+<div class=\"imag-container formule-1\">
+  <img src=\"https://www.turbo.fr/sites/default/files/styles/header_image/public/2020-11/Hamilton.jpg?itok=z1cFSo2i\" alt=\"photo de FORMULE 1\">
 </div>
+
 <div class=\"imag-container\">
-  <img src=\"https://cdn.pixabay.com/photo/2016/05/09/09/51/team-1381084_960_720.jpg\" alt=\"photo de jeux de société\">
-</div>
-
-<div class=\"imag-container jeux-vidéo\">
   <img src=\"https://cdn.pixabay.com/photo/2021/09/07/07/11/joysticks-6603119_960_720.jpg\" alt=\"photo de jeux vidéo\">
 </div>
 
@@ -240,7 +208,7 @@ class __TwigTemplate_6fdc810e3aba8c34783e4738836cbe0f extends Template
   height: auto;
   
 }
-.music , .mangas-animé , .jeux-vidéo {
+.music , .formule-1 , .jeux-vidéo {
   float: right;
 
 }
