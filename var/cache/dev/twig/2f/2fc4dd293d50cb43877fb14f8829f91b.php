@@ -27,6 +27,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
+            'javascripts' => [$this, 'block_javascripts'],
         ];
     }
 
@@ -133,6 +134,76 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
     }
 
+    // line 37
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 38
+        echo "<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <style>
+        #animatedText {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            white-space: nowrap;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div id=\"animatedText\">";
+        // line 54
+        echo twig_escape_filter($this->env, (isset($context["text"]) || array_key_exists("text", $context) ? $context["text"] : (function () { throw new RuntimeError('Variable "text" does not exist.', 54, $this->source); })()), "html", null, true);
+        echo "</div>
+
+<script>
+    // Fonction pour animer le texte
+    function animateText() {
+        var textElement = document.getElementById('animatedText');
+        var position = 0;
+
+        // Fonction d'animation
+        function moveText() {
+            position += 1;
+            textElement.style.left = position + 'px';
+
+            // Réinitialiser la position si le texte est sorti de l'écran
+            if (position > window.innerWidth) {
+                position = -textElement.clientWidth;
+            }
+
+            // Répéter l'animation
+            requestAnimationFrame(moveText);
+        }
+
+        // Lancer l'animation
+        moveText();
+    }
+
+    // Appeler la fonction d'animation
+    animateText();
+</script>
+
+</body>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
     /**
      * @codeCoverageIgnore
      */
@@ -154,7 +225,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  117 => 27,  106 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  166 => 54,  148 => 38,  138 => 37,  118 => 27,  107 => 19,  103 => 18,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -194,6 +265,55 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
             height: auto; /* Garantit que l'image conserve ses proportions d'origine */
         }
     </style>
+{% endblock %}
+{% block javascripts %}
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <style>
+        #animatedText {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            white-space: nowrap;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div id=\"animatedText\">{{ text }}</div>
+
+<script>
+    // Fonction pour animer le texte
+    function animateText() {
+        var textElement = document.getElementById('animatedText');
+        var position = 0;
+
+        // Fonction d'animation
+        function moveText() {
+            position += 1;
+            textElement.style.left = position + 'px';
+
+            // Réinitialiser la position si le texte est sorti de l'écran
+            if (position > window.innerWidth) {
+                position = -textElement.clientWidth;
+            }
+
+            // Répéter l'animation
+            requestAnimationFrame(moveText);
+        }
+
+        // Lancer l'animation
+        moveText();
+    }
+
+    // Appeler la fonction d'animation
+    animateText();
+</script>
+
+</body>
 {% endblock %}", "arsene/home.html.twig", "C:\\Users\\arsen\\projet00\\sae\\templates\\arsene\\home.html.twig");
     }
 }

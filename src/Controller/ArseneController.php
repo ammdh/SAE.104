@@ -21,8 +21,12 @@ class ArseneController extends AbstractController
     #[Route('/', name: 'arsene')]
     Public function home() 
     { 
-        return $this->render('arsene/home.html.twig');
-    } 
+        $text = "ARSENE M'DAHOMA";
+        return $this->render('arsene/home.html.twig', [
+            'text' => $text,
+        ]);
+    }
+    
     #[Route('/plus', name: 'plus')]
     public function about(): Response
     {
