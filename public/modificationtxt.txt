@@ -1,0 +1,6 @@
+ecrit reflexif apprentissage critiques connaitre l'architecture et les technologies d'un site web:
+ Les seul difficulter rencontrer actuellements sont le manque deconnsaissance en CSS. Car lors de mes années lycéens nous avons pa plus aborders cette partie . (site_web.pdf)
+
+ecrit reflexif apprentissage critiques Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et
+administration des réseaux et services fournis (DHCP, DNS, ...):
+Les problèmes rencontrer durant les ressoucres R1.02 et R1.08  étaient que d'abord que la ressource R1.08 ils étaient difficile de savoir les bonne commande a utiliser et qu'elle devenait complexe et aussi qu'il fallait s'habituer cela s'est améliorer dans la ressource R1.01c  par exemple lors de l'installation des serveur nfs et samba mais cela restent encore fragiles. (csc.pdf)

@@ -86,21 +86,21 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
         // line 6
         echo "
-
+   
     <div class=\"progress-container\">
         <h1>Voici mon portfolios:</h1>   
         <div class=\"progress-header\">Creer des outils et application informatiques  pour les R&T</div>
-        <div class=\"progress-bar bar-1\">Connaître l’architecture et les technologies d’un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive) (";
+        <div class=\"progress-bar bar-1\">Connaître l’architecture et les technologies d’un site Web   (";
         // line 11
         echo 70;
         echo "%)</div>
     </div>
     
+    
 
     <div class=\"progress-container\">
         <div class=\"progress-header\">Administrer les réseaux et l’Internet</div>
-        <div class=\"progress-bar bar-2\">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et
-                    administration des réseaux et services fournis (DHCP, DNS, ...) (";
+        <div class=\"progress-bar bar-2\">Maîtriser les rôles ... services fournis (DHCP, DNS, ...) (";
         // line 18
         echo 80;
         echo "%)</div>
@@ -116,16 +116,25 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     <div class=\"progress-container\">
         <div class=\"progress-header\">Administrer les réseaux et l’Internet </div>
-        <div class=\"progress-bar bar-4\">Savoir identifier les dysfonctionnements du réseau local(";
+        <div class=\"progress-bar bar-4\">Savoir identifier les dysfonctionnements du réseau local (";
         // line 28
         echo 55;
         echo "%)</div>
+    </div>
+    <div class=\"container\">
+
+        <h3>Cliquer ici...</h3>
+        <a href=\"";
+        // line 33
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("plus");
+        echo "\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
 
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id=\"downloadForm\" action=\"portfolios.xlsx\" method=\"get\">
         <button type=\"submit\" class=\"btn btn-primary mt-3\">Obtenir Portfolios(format excel)</button>
+        
     </form>
 
 
@@ -171,7 +180,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-1 {
         width: ";
-        // line 79
+        // line 85
         echo 70;
         echo "%;
         background-color: #4CAF50;
@@ -179,7 +188,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-2 {
         width: ";
-        // line 84
+        // line 90
         echo 80;
         echo "%;
         background-color: #2196F3;
@@ -187,14 +196,14 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     .bar-3 {
         width: ";
-        // line 89
+        // line 95
         echo 20;
         echo "%;
         background-color: #f44336;
     }
     .bar-4 {
         width: ";
-        // line 93
+        // line 99
         echo 55;
         echo "%;
         background-color: #e44336;
@@ -232,7 +241,7 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  198 => 93,  191 => 89,  183 => 84,  175 => 79,  121 => 28,  113 => 23,  105 => 18,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  207 => 99,  200 => 95,  192 => 90,  184 => 85,  129 => 33,  121 => 28,  113 => 23,  105 => 18,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -243,18 +252,18 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
 {% block body %}
 
-
+   
     <div class=\"progress-container\">
         <h1>Voici mon portfolios:</h1>   
         <div class=\"progress-header\">Creer des outils et application informatiques  pour les R&T</div>
-        <div class=\"progress-bar bar-1\">Connaître l’architecture et les technologies d’un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive) ({{ 70 }}%)</div>
+        <div class=\"progress-bar bar-1\">Connaître l’architecture et les technologies d’un site Web   ({{ 70 }}%)</div>
     </div>
+    
     
 
     <div class=\"progress-container\">
         <div class=\"progress-header\">Administrer les réseaux et l’Internet</div>
-        <div class=\"progress-bar bar-2\">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et
-                    administration des réseaux et services fournis (DHCP, DNS, ...) ({{ 80 }}%)</div>
+        <div class=\"progress-bar bar-2\">Maîtriser les rôles ... services fournis (DHCP, DNS, ...) ({{ 80 }}%)</div>
     </div>
 
     <div class=\"progress-container\">
@@ -264,13 +273,19 @@ class __TwigTemplate_6eb6ca3256bce1d059108fb08d720d22 extends Template
 
     <div class=\"progress-container\">
         <div class=\"progress-header\">Administrer les réseaux et l’Internet </div>
-        <div class=\"progress-bar bar-4\">Savoir identifier les dysfonctionnements du réseau local({{ 55 }}%)</div>
+        <div class=\"progress-bar bar-4\">Savoir identifier les dysfonctionnements du réseau local ({{ 55 }}%)</div>
+    </div>
+    <div class=\"container\">
+
+        <h3>Cliquer ici...</h3>
+        <a href=\"{{ path('plus') }}\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
 
     <div class=\"container\">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id=\"downloadForm\" action=\"portfolios.xlsx\" method=\"get\">
         <button type=\"submit\" class=\"btn btn-primary mt-3\">Obtenir Portfolios(format excel)</button>
+        
     </form>
 
 

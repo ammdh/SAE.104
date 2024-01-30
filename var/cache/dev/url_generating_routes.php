@@ -21,10 +21,8 @@ return [
     'plus' => [[], ['_controller' => 'App\\Controller\\ArseneController::about'], [], [['text', '/plus']], [], [], []],
     'ars1' => [[], ['_controller' => 'App\\Controller\\ArseneController::ars1'], [], [['text', '/ars1']], [], [], []],
     'ars2' => [[], ['_controller' => 'App\\Controller\\ArseneController::ars2'], [], [['text', '/ars2']], [], [], []],
-    'ini' => [[], ['_controller' => 'App\\Controller\\ArseneController::ini'], [], [['text', '/ini']], [], [], []],
     'App\Controller\ArseneController::index' => [[], ['_controller' => 'App\\Controller\\ArseneController::home'], [], [['text', '/']], [], [], []],
     'App\Controller\ArseneController::about' => [[], ['_controller' => 'App\\Controller\\ArseneController::about'], [], [['text', '/plus']], [], [], []],
     'App\Controller\ArseneController::ars1' => [[], ['_controller' => 'App\\Controller\\ArseneController::ars1'], [], [['text', '/ars1']], [], [], []],
     'App\Controller\ArseneController::ars2' => [[], ['_controller' => 'App\\Controller\\ArseneController::ars2'], [], [['text', '/ars2']], [], [], []],
-    'App\Controller\ArseneController::ini' => [[], ['_controller' => 'App\\Controller\\ArseneController::ini'], [], [['text', '/ini']], [], [], []],
 ];

@@ -18,7 +18,6 @@ return [
         '/plus' => [[['_route' => 'plus', '_controller' => 'App\\Controller\\ArseneController::about'], null, null, null, false, false, null]],
         '/ars1' => [[['_route' => 'ars1', '_controller' => 'App\\Controller\\ArseneController::ars1'], null, null, null, false, false, null]],
         '/ars2' => [[['_route' => 'ars2', '_controller' => 'App\\Controller\\ArseneController::ars2'], null, null, null, false, false, null]],
-        '/ini' => [[['_route' => 'ini', '_controller' => 'App\\Controller\\ArseneController::ini'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

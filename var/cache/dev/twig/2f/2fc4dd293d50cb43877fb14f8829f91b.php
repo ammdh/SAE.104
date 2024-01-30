@@ -110,14 +110,12 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
             </div>
         </p>
         </div>
-        <div class=\"col-md-6\">
-              
-        </div>
+        
     </div>
-
+    <div class=\"container\">
         <h3>Cliquer ici...</h3>
         <a href=\"";
-        // line 31
+        // line 29
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("plus");
         echo "\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
@@ -158,7 +156,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  121 => 31,  108 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  119 => 29,  108 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -187,11 +185,9 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
             </div>
         </p>
         </div>
-        <div class=\"col-md-6\">
-              
-        </div>
+        
     </div>
-
+    <div class=\"container\">
         <h3>Cliquer ici...</h3>
         <a href=\"{{ path('plus') }}\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>

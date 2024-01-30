@@ -88,26 +88,21 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ars2");
         echo "\">CV - ARSENE</a>
                     </li>
-\t\t\t\t\t<li class=\"nav-item\">
-                          <a class=\"nav-link\" href=\"";
-        // line 31
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ini");
-        echo "\">Modification</a>
-                    </li>
+\t\t\t\t\t
                 </ul>
             </div>
 \t\t</nav>
 \t\t<div 2
 \t\t\t";
-        // line 37
+        // line 35
         $this->displayBlock('body', $context, $blocks);
-        // line 38
+        // line 36
         echo "\t\t</div>
 
 \t\t";
-        // line 40
+        // line 38
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 41
+        // line 39
         echo "\t</body>
 </html>
 ";
@@ -156,7 +151,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
 
     }
 
-    // line 37
+    // line 35
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -174,7 +169,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
 
     }
 
-    // line 40
+    // line 38
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -213,7 +208,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  178 => 40,  160 => 37,  142 => 8,  123 => 5,  111 => 41,  109 => 40,  105 => 38,  103 => 37,  94 => 31,  88 => 28,  78 => 21,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  173 => 38,  155 => 35,  137 => 8,  118 => 5,  106 => 39,  104 => 38,  100 => 36,  98 => 35,  88 => 28,  78 => 21,  64 => 9,  62 => 8,  58 => 7,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -247,9 +242,7 @@ class __TwigTemplate_05c4784e54957d6978be56c66839a175 extends Template
                     <li class=\"nav-item\">
                           <a class=\"nav-link\" href=\"{{ path('ars2') }}\">CV - ARSENE</a>
                     </li>
-\t\t\t\t\t<li class=\"nav-item\">
-                          <a class=\"nav-link\" href=\"{{ path('ini') }}\">Modification</a>
-                    </li>
+\t\t\t\t\t
                 </ul>
             </div>
 \t\t</nav>

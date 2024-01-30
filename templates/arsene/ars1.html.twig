@@ -4,18 +4,18 @@
 
 {% block body %}
 
-
+   
     <div class="progress-container">
         <h1>Voici mon portfolios:</h1>   
         <div class="progress-header">Creer des outils et application informatiques  pour les R&T</div>
-        <div class="progress-bar bar-1">Connaître l’architecture et les technologies d’un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive) ({{ 70 }}%)</div>
+        <div class="progress-bar bar-1">Connaître l’architecture et les technologies d’un site Web   ({{ 70 }}%)</div>
     </div>
+    
     
 
     <div class="progress-container">
         <div class="progress-header">Administrer les réseaux et l’Internet</div>
-        <div class="progress-bar bar-2">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et
-                    administration des réseaux et services fournis (DHCP, DNS, ...) ({{ 80 }}%)</div>
+        <div class="progress-bar bar-2">Maîtriser les rôles ... services fournis (DHCP, DNS, ...) ({{ 80 }}%)</div>
     </div>
 
     <div class="progress-container">
@@ -25,13 +25,19 @@
 
     <div class="progress-container">
         <div class="progress-header">Administrer les réseaux et l’Internet </div>
-        <div class="progress-bar bar-4">Savoir identifier les dysfonctionnements du réseau local({{ 55 }}%)</div>
+        <div class="progress-bar bar-4">Savoir identifier les dysfonctionnements du réseau local ({{ 55 }}%)</div>
+    </div>
+    <div class="container">
+
+        <h3>Cliquer ici...</h3>
+        <a href="{{ path('plus') }}" class="btn btn-primary">Pour en savoir plus</a>
     </div>
 
     <div class="container">
         <h2> Cliquer ci-dessous pour obtenir le portfolios complet en format excel:</h2>
         <form id="downloadForm" action="portfolios.xlsx" method="get">
         <button type="submit" class="btn btn-primary mt-3">Obtenir Portfolios(format excel)</button>
+        
     </form>
 
 
