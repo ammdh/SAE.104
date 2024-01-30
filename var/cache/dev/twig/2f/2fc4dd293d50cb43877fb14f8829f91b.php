@@ -86,36 +86,34 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
         // line 6
         echo "    <div class=\"container\">
-        <div class=\"row\">
-            <div class=\"col-md-6\">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
             Bonjour, je suis Arsene M'DAHOMA, j'ai 18 ans, j'habite à Roanne<br>
             je suis originaires de Mayotte et de la Reunion, et j'étudie à l'I.U.T de Roanne,<br>
             où je suis en apprentissage dans la formation B.U.T réseaux et télécommunication en première année.
         </p>
-        <h2>Parcours</h3>
+        <h3>Parcours</h3>
         <p>
             
             Je suis née en France à Angouleme en CHARENTE(16), mes parents sont originaires de la Réunion et de Mayotte, 
             <div class=\"col-md-6\">
                 <img src=\"";
-        // line 20
+        // line 18
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("mayotte.png"), "html", null, true);
         echo "\" alt=\"Mayotte Image\" class=\"img-fluid resized-image\">
                 <img src=\"";
-        // line 21
+        // line 19
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("reunion.png"), "html", null, true);
         echo "\" alt=\"Reunion Image\" class=\"img-fluid resized-image\">
             </div>
         </p>
-        </div>
+    </div>
         
     </div>
     <div class=\"container\">
         <h3>Cliquer ici...</h3>
         <a href=\"";
-        // line 29
+        // line 27
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("plus");
         echo "\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </div>
@@ -156,7 +154,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  119 => 29,  108 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  117 => 27,  106 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -167,15 +165,13 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
 {% block body %}
     <div class=\"container\">
-        <div class=\"row\">
-            <div class=\"col-md-6\">
         <h1>BIENVENUE SUR MON SITE WEB PERSONNEL</h1>
         <p>
             Bonjour, je suis Arsene M'DAHOMA, j'ai 18 ans, j'habite à Roanne<br>
             je suis originaires de Mayotte et de la Reunion, et j'étudie à l'I.U.T de Roanne,<br>
             où je suis en apprentissage dans la formation B.U.T réseaux et télécommunication en première année.
         </p>
-        <h2>Parcours</h3>
+        <h3>Parcours</h3>
         <p>
             
             Je suis née en France à Angouleme en CHARENTE(16), mes parents sont originaires de la Réunion et de Mayotte, 
@@ -184,7 +180,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
                 <img src=\"{{ asset('reunion.png') }}\" alt=\"Reunion Image\" class=\"img-fluid resized-image\">
             </div>
         </p>
-        </div>
+    </div>
         
     </div>
     <div class=\"container\">
