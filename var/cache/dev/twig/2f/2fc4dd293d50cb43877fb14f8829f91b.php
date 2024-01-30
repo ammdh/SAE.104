@@ -134,7 +134,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 
     }
 
-    // line 37
+    // line 39
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -144,7 +144,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 38
+        // line 40
         echo "<head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -152,7 +152,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         #animatedText {
             position: absolute;
             left: 0;
-            top: 50%;
+            bottom: 0;  /* Placer le texte en bas */
             white-space: nowrap;
             font-size: 20px;
             font-family: Arial, sans-serif;
@@ -162,8 +162,8 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
 <body>
 
 <div id=\"animatedText\">";
-        // line 54
-        echo twig_escape_filter($this->env, (isset($context["text"]) || array_key_exists("text", $context) ? $context["text"] : (function () { throw new RuntimeError('Variable "text" does not exist.', 54, $this->source); })()), "html", null, true);
+        // line 56
+        echo twig_escape_filter($this->env, (isset($context["text"]) || array_key_exists("text", $context) ? $context["text"] : (function () { throw new RuntimeError('Variable "text" does not exist.', 56, $this->source); })()), "html", null, true);
         echo "</div>
 
 <script>
@@ -175,11 +175,11 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         // Fonction d'animation
         function moveText() {
             position += 1;
-            textElement.style.left = position + 'px';
+            textElement.style.bottom = position + 'px';
 
             // Réinitialiser la position si le texte est sorti de l'écran
-            if (position > window.innerWidth) {
-                position = -textElement.clientWidth;
+            if (position > window.innerHeight) {
+                position = -textElement.clientHeight;
             }
 
             // Répéter l'animation
@@ -225,7 +225,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  166 => 54,  148 => 38,  138 => 37,  118 => 27,  107 => 19,  103 => 18,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  166 => 56,  148 => 40,  138 => 39,  118 => 27,  107 => 19,  103 => 18,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -266,6 +266,8 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         }
     </style>
 {% endblock %}
+
+
 {% block javascripts %}
 <head>
     <meta charset=\"UTF-8\">
@@ -274,7 +276,7 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         #animatedText {
             position: absolute;
             left: 0;
-            top: 50%;
+            bottom: 0;  /* Placer le texte en bas */
             white-space: nowrap;
             font-size: 20px;
             font-family: Arial, sans-serif;
@@ -294,11 +296,11 @@ class __TwigTemplate_f4533018ad4f6114b6a576b756ef89d2 extends Template
         // Fonction d'animation
         function moveText() {
             position += 1;
-            textElement.style.left = position + 'px';
+            textElement.style.bottom = position + 'px';
 
             // Réinitialiser la position si le texte est sorti de l'écran
-            if (position > window.innerWidth) {
-                position = -textElement.clientWidth;
+            if (position > window.innerHeight) {
+                position = -textElement.clientHeight;
             }
 
             // Répéter l'animation
